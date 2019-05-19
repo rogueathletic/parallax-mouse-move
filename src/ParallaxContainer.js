@@ -16,7 +16,7 @@ import shifter from "./assets/bicycle-deconstruct/shifter.png";
 import SRM from "./assets/bicycle-deconstruct/srmCrankset.png";
 import frameOne from "./assets/bicycle-deconstruct/frameThree.png";
 import stem from "./assets/bicycle-deconstruct/stem.png";
-
+import speedsleev from "./assets/bicycle-deconstruct/speedsleev.png";
 
 const layers = [
   {
@@ -60,7 +60,7 @@ const layers = [
   {
     name: "nameGrey",
     image: handlebars,
-    dataDepth: "2"
+    dataDepth: "-3"
   },
   {
     name: "nameWhite",
@@ -84,9 +84,14 @@ const layers = [
     dataDepth: "6"
   },
   {
+    name: "nameWhite",
+    image: speedsleev,
+    dataDepth: "-7"
+  },
+  {
     name: "nameGrey",
     image: shifter,
-    dataDepth: "7"
+    dataDepth: "8"
   },
 
 
