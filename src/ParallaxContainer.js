@@ -14,7 +14,7 @@ import rearWheel from "./assets/bicycle-deconstruct/rearWheel.png";
 import saddle from "./assets/bicycle-deconstruct/saddle.png";
 import shifter from "./assets/bicycle-deconstruct/shifter.png";
 import SRM from "./assets/bicycle-deconstruct/srmCrankset.png";
-import frameOne from "./assets/bicycle-deconstruct/frameOne.png";
+import frameOne from "./assets/bicycle-deconstruct/frameThree.png";
 import stem from "./assets/bicycle-deconstruct/stem.png";
 
 
@@ -22,36 +22,30 @@ const layers = [
   {
     name: "nameBlack",
     image: cassette,
-    dataDepth: "2",
+    dataDepth: "-7",
     maxWidth: "300px",
   },
   {
     name: "nameGrey",
     image: stem,
-    dataDepth: "-1"
+    dataDepth: "-6"
   },
-
-
   {
     name: "nameWhite",
     image: frontWheel,
-    dataDepth: "-2"
+    dataDepth: "-5"
   },
   {
     name: "nameGrey",
     image: rearWheel,
-    dataDepth: "-1"
+    dataDepth: "-4"
   },
-  {
-    name: "nameTeal",
-    image: frontDerailleur,
-    dataDepth: "1",
-    boxShadow: "5px 5px 20px black"
-  },
+
   {
     name: "nameGrey",
     image: frameOne,
-    dataDepth: "-1"
+    dataDepth: "-3",
+    maxWidth: "300px"
   },
   {
     name: "nameWhite",
@@ -61,35 +55,38 @@ const layers = [
   {
     name: "nameTeal",
     image: chain,
-    dataDepth: "1",
-    boxShadow: "5px 5px 20px black"
+    dataDepth: "1"
   },
   {
     name: "nameGrey",
     image: handlebars,
-    dataDepth: "-1"
+    dataDepth: "2"
   },
   {
     name: "nameWhite",
     image: handlebarTape,
-    dataDepth: "-2"
+    dataDepth: "3"
   },
   {
     name: "nameTeal",
     image: rearDerailleur,
-    dataDepth: "1",
-    boxShadow: "5px 5px 20px black"
+    dataDepth: "4"
+  },
+  {
+    name: "nameTeal",
+    image: frontDerailleur,
+    dataDepth: "5"
   },
 
   {
     name: "nameWhite",
     image: saddle,
-    dataDepth: "-2"
+    dataDepth: "6"
   },
   {
     name: "nameGrey",
     image: shifter,
-    dataDepth: "-1"
+    dataDepth: "7"
   },
 
 

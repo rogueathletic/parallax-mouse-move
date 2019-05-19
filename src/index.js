@@ -19,7 +19,7 @@ function App() {
     <React.Fragment>
       <GlobalStyle />
       {/* */}
-      <ParallaxContainer />
+      <ParallaxContainer style={{maxWidth: "800px"}} />
     </React.Fragment>
   );
 }
