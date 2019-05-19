@@ -2,39 +2,96 @@ import React, { useEffect } from "react";
 import Styled from "styled-components";
 import Parallax from "parallax-js";
 import PropTypes from "prop-types";
+import cassette from "./assets/bicycle-deconstruct/cassette.png";
+import chain from "./assets/bicycle-deconstruct/chain.png";
 
-import backgroundImage from "./assets/background.jpg";
-
-import nameBlack from "./assets/nameBlack.png";
-import nameTeal from "./assets/nameTeal.png";
-import nameGrey from "./assets/nameGrey.png";
-import nameWhite from "./assets/nameWhite.png";
+import frontWheel from "./assets/bicycle-deconstruct/frontWheel.png";
+import frontDerailleur from "./assets/bicycle-deconstruct/frontDerailleur.png";
+import handlebars from "./assets/bicycle-deconstruct/handlebars.png";
+import handlebarTape from "./assets/bicycle-deconstruct/handlebarTape.png";
+import rearDerailleur from "./assets/bicycle-deconstruct/rearDerailleur.png";
+import rearWheel from "./assets/bicycle-deconstruct/rearWheel.png";
+import saddle from "./assets/bicycle-deconstruct/saddle.png";
+import shifter from "./assets/bicycle-deconstruct/shifter.png";
+import SRM from "./assets/bicycle-deconstruct/srmCrankset.png";
+import frameOne from "./assets/bicycle-deconstruct/frameOne.png";
+import stem from "./assets/bicycle-deconstruct/stem.png";
 
 
 const layers = [
   {
     name: "nameBlack",
-    image: nameBlack,
+    image: cassette,
     dataDepth: "2",
     maxWidth: "300px",
-    maxHeight: "100px;!important"
+  },
+  {
+    name: "nameGrey",
+    image: stem,
+    dataDepth: "-1"
+  },
+
+
+  {
+    name: "nameWhite",
+    image: frontWheel,
+    dataDepth: "-2"
+  },
+  {
+    name: "nameGrey",
+    image: rearWheel,
+    dataDepth: "-1"
   },
   {
     name: "nameTeal",
-    image: nameTeal,
+    image: frontDerailleur,
     dataDepth: "1",
     boxShadow: "5px 5px 20px black"
   },
   {
     name: "nameGrey",
-    image: nameGrey,
+    image: frameOne,
     dataDepth: "-1"
   },
   {
     name: "nameWhite",
-    image: nameWhite,
+    image: SRM,
     dataDepth: "-2"
   },
+  {
+    name: "nameTeal",
+    image: chain,
+    dataDepth: "1",
+    boxShadow: "5px 5px 20px black"
+  },
+  {
+    name: "nameGrey",
+    image: handlebars,
+    dataDepth: "-1"
+  },
+  {
+    name: "nameWhite",
+    image: handlebarTape,
+    dataDepth: "-2"
+  },
+  {
+    name: "nameTeal",
+    image: rearDerailleur,
+    dataDepth: "1",
+    boxShadow: "5px 5px 20px black"
+  },
+
+  {
+    name: "nameWhite",
+    image: saddle,
+    dataDepth: "-2"
+  },
+  {
+    name: "nameGrey",
+    image: shifter,
+    dataDepth: "-1"
+  },
+
 
 ];
 
@@ -57,7 +114,7 @@ const ParallaxContainer = ({ backgroundImage, layers }) => {
   });
 
   return (
-    <Container backgroundImage={backgroundImage}>
+    <Container >
       <div id="scene">
         {layers.map((l, index) => (
           <img
@@ -84,7 +141,7 @@ ParallaxContainer.propTypes = {
 };
 
 ParallaxContainer.defaultProps = {
-  backgroundImage: backgroundImage,
+
   layers: layers
 };
 
