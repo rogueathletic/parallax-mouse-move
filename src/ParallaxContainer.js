@@ -4,7 +4,7 @@ import Parallax from "parallax-js";
 import PropTypes from "prop-types";
 import cassette from "./assets/bicycle-deconstruct/cassette.png";
 import chain from "./assets/bicycle-deconstruct/chain.png";
-
+import backOfChain from "./assets/bicycle-deconstruct/backOfChain.png";
 import frontWheel from "./assets/bicycle-deconstruct/frontWheel.png";
 import frontDerailleur from "./assets/bicycle-deconstruct/frontDerailleur.png";
 import handlebars from "./assets/bicycle-deconstruct/handlebars.png";
@@ -18,12 +18,19 @@ import frameOne from "./assets/bicycle-deconstruct/frameThree.png";
 import stem from "./assets/bicycle-deconstruct/stem.png";
 import speedsleev from "./assets/bicycle-deconstruct/speedsleev.png";
 
+
 const layers = [
   {
     name: "nameBlack",
     image: cassette,
     dataDepth: "-7",
-    maxWidth: "300px",
+
+  },
+  {
+    name: "nameBlack",
+    image: backOfChain,
+    dataDepth: "1",
+
   },
   {
     name: "nameGrey",
