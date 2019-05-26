@@ -14,7 +14,7 @@ import rearWheel from "./assets/bicycle-deconstruct/rearWheel.png";
 import saddle from "./assets/bicycle-deconstruct/saddle.png";
 import shifter from "./assets/bicycle-deconstruct/shifter.png";
 import SRM from "./assets/bicycle-deconstruct/srmCrankset.png";
-import frameOne from "./assets/bicycle-deconstruct/frameThree.png";
+import frameOne from "./assets/bicycle-deconstruct/full-size/frameOne1.png";
 import stem from "./assets/bicycle-deconstruct/stem.png";
 import speedsleev from "./assets/bicycle-deconstruct/speedsleev.png";
 
